@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="shortcut icon" href="../images/common/lego_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+    <script src="../js/greensock/gsap.min.js"></script>
+    <script src="../js/greensock/CSSRulePlugin.min.js"></script>
+    <script src="../js/lodash.js"></script>
+    <script src="../js/layout.js" defer></script>
+    <title>Rachael's PORTFOLIO</title>
+  </head>
+  <body>
+    <div id="popUp">
+      <div class="popupContents">
+        <div class="bubble">
+          <div class="bb b01"></div>
+          <div class="bb b02"></div>
+          <div class="bb b03"></div>
+          <div class="bb b04"></div>
+          <div class="bb b05"></div>
+          <div class="bb b06"></div>
+        </div>
+        <div class="inner">
+          <div class="info">
+            <p>
+              이 사이트는 개인 포트폴리오로 비상업성 사이트입니다. <br />
+              사이트에 사용된 사진의 저작권은 저에게 있지 않습니다.
+            </p>
+            <p>*사진 출저 : unsplash (https://unsplash.com/)</p>
+          </div>
+          <div class="btns">
+            <button class="btnClose"><span class="material-icons"> close </span>닫기</button>
+            <button class="btnWeekClose"><span class="material-icons"> done </span>일주일 간 이 페이지 보지 않기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="waveBg">
+      <svg
+        id="waves"
+        width="1922"
+        height="336"
+        viewBox="10 0 1882 336"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="wave"
+            d="M1922,95.59,1922.1,50c-96,.83-98.1-50.57-194.1-50-96,.84-96,52-192,52.79s-96.1-50.56-191.9-50c-96,.84-96,52-191.8,52.79-96,.84-96.1-50.56-191.9-50-96,.83-96,52-192,52.79s-96.1-50.57-192.1-50c-96,.83-96,52-192,52.79s-96.1-50.57-192.1-50C96,12.51,96,63.91,0,64.46L0,95.59"
+          />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#wave" x="10" y="4" fill="rgba(200, 187, 255, 0.8)" />
+          <use xlink:href="#wave" x="-10" y="2" fill="rgba(255,200,8,0.5)" />
+          <use xlink:href="#wave" x="0" y="0" fill="#ffc808" />
+        </g>
+      </svg>
+      <div class="underBox"></div>
+    </div>
+    <div class="fakeCover"></div>
+    <header id="header">
+      <div class="gnb">
+        <ul class="gnbList">
+          <li><a href="">#main</a></li>
+          <li><a href="">#introduce</a></li>
+          <li>
+            <span>portfolio</span>
+            <span class="pf01"><a href="">#1</a></span>
+            <span><a href="">#2</a></span>
+          </li>
+          <li><a href="">#contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main id="main">
+      <section id="mainvisual" class="section">
+        <div class="wrap">
+          <h1 class="title">
+            <span>crying</span>
+            <span>harder</span>
+            <span>baby</span>
+          </h1>
+          <div class="img"></div>
+        </div>
+      </section>
+      <section id="introduce" class="section">
+        <div class="img"></div>
+      </section>
+      <section id="p1" class="section"></section>
+      <section id="p2" class="section"></section>
+      <section id="contact" class="section">
+        <div class="img"></div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p class="copyright">All Copyright Reserved by <strong>Rachael Shin</strong></p>
+    </footer>
+    <div class="cursor"></div>
+  </body>
+</html>
