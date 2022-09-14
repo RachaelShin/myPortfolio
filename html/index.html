@@ -10,38 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="shortcut icon" href="../images/common/lego_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/fullpage.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/js.cookie.min.js"></script>
     <script src="../js/greensock/gsap.min.js"></script>
     <script src="../js/greensock/CSSRulePlugin.min.js"></script>
+    <script src="../js/fullpage.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/lodash.js"></script>
-    <script src="../js/layout.js" defer></script>
+    <script src="../js/index.js" defer></script>
     <title>Rachael's PORTFOLIO</title>
   </head>
   <body>
     <div id="popUp">
       <div class="popupContents">
-        <div class="bubble">
-          <div class="bb b01"></div>
-          <div class="bb b02"></div>
-          <div class="bb b03"></div>
-          <div class="bb b04"></div>
-          <div class="bb b05"></div>
-          <div class="bb b06"></div>
+        <div class="info">
+          <p>
+            이 사이트는 개인 포트폴리오로 비상업성 사이트입니다. <br />
+            사이트에 사용된 사진의 저작권은 저에게 있지 않습니다.
+          </p>
+          <p>*사진 출저 : unsplash (https://unsplash.com/)</p>
         </div>
-        <div class="inner">
-          <div class="info">
-            <p>
-              이 사이트는 개인 포트폴리오로 비상업성 사이트입니다. <br />
-              사이트에 사용된 사진의 저작권은 저에게 있지 않습니다.
-            </p>
-            <p>*사진 출저 : unsplash (https://unsplash.com/)</p>
-          </div>
-          <div class="btns">
-            <button class="btnClose"><span class="material-icons"> close </span>닫기</button>
-            <button class="btnWeekClose"><span class="material-icons"> done </span>일주일 간 이 페이지 보지 않기</button>
-          </div>
+        <div class="btns">
+          <button class="btnClose"><span class="material-icons"> close </span>닫기</button>
+          <button class="btnWeekClose"><span class="material-icons"> done </span>일주일 간 이 페이지 보지 않기</button>
         </div>
       </div>
     </div>
@@ -71,18 +66,22 @@
       </svg>
       <div class="underBox"></div>
     </div>
+    <div class="bubbles">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span
+      ><span></span><span></span><span></span><span></span><span></span>
+    </div>
     <div class="fakeCover"></div>
     <header id="header">
       <div class="gnb">
         <ul class="gnbList">
-          <li><a href="">#main</a></li>
-          <li><a href="">#introduce</a></li>
+          <li><a href="#mainVisual">#main</a></li>
+          <li><a href="#introduce">#introduce</a></li>
           <li>
             <span>portfolio</span>
-            <span class="pf01"><a href="">#1</a></span>
-            <span><a href="">#2</a></span>
+            <span class="pf01"><a href="#p1">#1</a></span>
+            <span><a href="#p2">#2</a></span>
           </li>
-          <li><a href="">#contact</a></li>
+          <li><a href="#contact">#contact</a></li>
         </ul>
       </div>
     </header>
@@ -98,17 +97,44 @@
         </div>
       </section>
       <section id="introduce" class="section">
-        <div class="img"></div>
+        <div class="wrap">
+          <div class="img">
+            <div class="pfImg"></div>
+            <div class="around"><a href="https://github.com/RachaelShin" alt="github" target="_blank"></a><a href="https://velog.io/@rachael" alt="velog" target="_blank"></a></div>
+          </div>
+          <div class="contents">
+            <div class="circleBg"></div>
+            <div class="txt"></div>
+            <div class="stack"></div>
+          </div>
+        </div>
       </section>
-      <section id="p1" class="section"></section>
-      <section id="p2" class="section"></section>
+      <section id="p1" class="section">
+        <div class="pjtFileLayout">
+          <h2 class="title">clone-coding</h2>
+          <div id="pjt01Swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"></li>
+              <li class="swiper-slide"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="p2" class="section">
+        <div class="pjtFileLayout">
+          <h2 class="title">FRONT-END project</h2>
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide"></li>
+            <li class="swiper-slide"></li>
+            <li class="swiper-slide"></li>
+          </ul>
+        </div>
+      </section>
       <section id="contact" class="section">
         <div class="img"></div>
+        <p class="copyright">All Copyright Reserved by <strong>Rachael Shin</strong></p>
       </section>
     </main>
-    <footer id="footer">
-      <p class="copyright">All Copyright Reserved by <strong>Rachael Shin</strong></p>
-    </footer>
     <div class="cursor"></div>
   </body>
 </html>
